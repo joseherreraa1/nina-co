@@ -26,6 +26,14 @@ h2{
     font-size: 100px;
 }
 
+a {
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+/* Header */
 .header__nav {
     display: flex;
 }
@@ -46,7 +54,6 @@ h2{
 }
 
 .header__item {
-    font-family: 'Roboto', sans-serif;
     display: flex;
     padding: 15px;
 }
@@ -55,10 +62,10 @@ h2{
     color: rgb(63, 61, 61);
     text-decoration: none;
 }
-
+/* Index */
 .main__section {
     display: flex;
-    height: 100vh;
+    height: 90vh;
     background-image: url(../recursos/portada.jpg);
     background-size: cover;
     background-position: center;
@@ -78,13 +85,13 @@ h2{
     line-height: 1.5;
     text-align: center;
     color: rgb(0, 0, 0);
-    padding: 0px;
-    margin: 50px;
+    padding: 50px;
+    margin: 100px;
 }
 
 .main__imagenes {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-row: 1fr;
     gap: 15px;
     margin: 15px;
@@ -98,8 +105,8 @@ h2{
     padding: 16px;
 }
 .main__img__principal {
-width: 400px;
-height: 350px;
+width: 300px;
+height: 300px;
 }
 .img__uno{
     grid-column: 1/2;
@@ -111,6 +118,11 @@ height: 350px;
 }
 .img__tres{
     grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.img_cuatro{
+    grid-column: 4/5;
     grid-row: 1/2;
 }
 
@@ -127,50 +139,7 @@ height: 350px;
     width: 600px;
     height: 400px;
 }
-
-footer {
-    background-color: rgb(163, 236, 163);
-    display: grid;
-    padding: 24px;
-    grid-template-areas:"indice redes"
-                        "indice derechos";
-}
-.footer__indice{
-    grid-area: indice;
-}
-
-.footer__redes{
-    grid-area: redes;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer__derechos {
-    grid-area: derechos;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.footer__iconos{
-    width: 50px;
-    height: 50px;
-}
-
-.footer__indice ul li {
-    font-size: 16px;
-    text-decoration: none;
-    padding: 10px;
-}
-
-a {
-    text-decoration: none;
-}
-ul{
-    list-style: none;
-}
-
-
+/* Productos */
 .main__productos {
     display: grid;
     width: 90vw;
@@ -240,102 +209,422 @@ ul{
     border: rgb(219, 239, 38) solid 5px;
 }
 
-/* /* .main__tallemayor {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-} */
-/* .main__talle {
-    padding: 10px;
-    width: 400px;
-    height: 400px;
-    display: flex;
-} */
+/* Tu talle */
 .main__tutalle{
     display: grid;
     width: 90vw;
-    height: 200vh;
-    padding: 50px;
+    height: 150vh;
+    padding: 10px;
     margin: auto;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 15px;
 }
 
 .sabertutalle{
-    grid-column: 1/3;
+    grid-column: 2/3;
     grid-row: 1/2;
     background-image: url(../recursos/calcular.png);
     background-position: center;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border: rgb(0, 0, 0) solid 5px
 }
 .collar{
     grid-column: 1/2;
     grid-row: 2/3;
     background-image: url(../recursos/collar.png);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    border: rgb(0, 0, 0) solid 5px
 }
 .correa{
-    grid-column: 2/3;
+    grid-column: 3/4;
     grid-row: 2/3;
     background-image: url(../recursos/correa.png);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    border: rgb(0, 0, 0) solid 5px
 }
 .moño{
     grid-column: 1/2;
     grid-row: 3/4;
     background-image: url(../recursos/moño.png);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    border: rgb(0, 0, 0) solid 5px
 }
 .pañuelo{
-    grid-column: 2/3;
+    grid-column: 3/4;
     grid-row: 3/4;
     background-image: url(../recursos/pañuelo.png);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    border: rgb(0, 0, 0) solid 5px
 }
 
+/* Sobre nosotros */
 .main__juli{
     display: flex;
     justify-content: center;
 }
+
+.main__perrojuli{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .main__imagenjuli {
-    width: 500px;
+    width: auto;
+    height: 400px;
     padding: 10px;
+    border-radius: 50px;
+}
+
+/* Contactanos */
+
+.contacto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: auto;
 }
 
 .main__legend {
-    text-align: center;
+text-align: center;
 }
 
 .main__formulario{
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
-    text-align: center;
-    display: inline-block;
     border: solid 5px rgb(0, 0, 0);
     padding: 10px;
     margin: 20px;
 }
 
 .main__inframe{
-    padding: 10px;
+    display: flex;
+    padding:30px;
     margin: 20px;
 }
 
-/* Media de celular */
+/* Footer */
+footer {
+    background-color: rgb(163, 236, 163);
+    display: grid;
+    padding: 24px;
+    grid-template-areas:"indice redes"
+                        "indice derechos";
+}
+.footer__indice{
+    grid-area: indice;
+}
+
+.footer__redes{
+    grid-area: redes;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__derechos {
+    grid-area: derechos;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__iconos{
+    width: 50px;
+    height: 50px;
+}
+
+.footer__indice ul li {
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Media Querie de celular */
+@media (min-width:320px) and (max-width:575px) {
+    header {
+        height: auto;
+        position: relative;
+    }
+    .header__lista{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+/* main index */
+.main__section {
+    display: flex;
+    height: auto;
+    background-image: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__titulo {
+    font-size: 40px;
+    padding: 30px;
+}
+
+.main__texto {
+    font-size: 16px;
+    justify-content: center;
+    padding: 25px;
+    margin: 0px;
+}
+.main__imagenes {
+    grid-template-columns: 1fr;
+    grid-row: auto;
+}
+.main__img__principal {
+width: 80vw;
+height: 50vh;
+}
+.img__uno{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.img__dos{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.img__tres{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.img_cuatro{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+.main__sectionabajo {
+    flex-direction: column;
+    padding: 15px;
+}
+
+.main__bolsa {
+    width: 60vw;
+    height: 50vh;
+}
+/* Productos */
+.main__productos {
+    width: auto;
+    height: 350vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+.collarmascorrea{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-size: cover;
+}
+
+.kitconny{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background-size: cover;
+}
+
+.kithenry{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    background-size: cover;
+}
+.kitsally{
+    grid-column: 1/2;
+    grid-row: 5/6;
+    background-size: cover;
+}
+.kitlucky{
+    grid-column: 1/2;
+    grid-row: 6/7;
+    background-size: cover;
+}
+.kittony{
+    grid-column: 1/2;
+    grid-row: 7/8;
+    background-size: cover;
+}
+/* tu talle */
+.main__tutalle{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+    .sabertutalle{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background-size: contain;
+}
+    .collar{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        background-size: contain;
+    }
+    .correa{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        background-size: contain;
+    }
+    .moño{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        background-size: contain;
+    }
+    .pañuelo{
+        grid-column: 1/2;
+        grid-row: 5/6;
+        background-size: contain;
+    }
+    /* Sobre Nosotros */
+    .main__juli{
+        flex-wrap: wrap ;
+        padding: 20px;
+    }
+    .main__imagenjuli {
+        width: auto;
+        height: 200px;
+    }
+}
+/* Media Querie de tablet */
+@media (min-width: 576px) and (max-width: 992px) {
+    header{
+        height: auto;
+    }
+/* Index */
+    .main__section {
+        height: auto;
+        background-image: none;
+        justify-content: center;
+    }
+    
+    .main__titulo {
+        font-size: 80px;
+        padding: 0px;
+    }
+    
+    .main__texto {
+        padding: 50px;
+        margin: auto;
+    }
+
+    .main__imagenes {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    .main__img{
+        flex-wrap: wrap;
+    }
+    .main__img__principal {
+        width: 40vw;
+        height: 50vh;
+    }
+    .img__uno{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .img__dos{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .img__tres{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    .img_cuatro{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .main__sectionabajo {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .main__bolsa {
+        display: flex;
+        width: 30vw;
+        height: 50vh;
+    }
+    /* Productos */
+    .main__productos {
+        width: 90vw;
+        height: 110vh;
+        padding: 0px;
+        padding-bottom: 16px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    
+    .collarmascorrea{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .kitconny{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    
+    .kithenry{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .kitsally{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .kitlucky{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .kittony{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    /* Tu talle */
+    .main__tutalle{
+        width: 90vw;
+        height: 120vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    
+    .sabertutalle{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background-size: contain;
+    }
+    .collar{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .correa{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .moño{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .pañuelo{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+        /* Sobre Nosotros */
+    .main__juli {
+        flex-direction: column;
+        flex-wrap: wrap ;
+        padding: 20px;
+    }
+    .main__imagenjuli {
+        width: auto;
+        height: 50vh;
+    }
+}
