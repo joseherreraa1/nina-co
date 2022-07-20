@@ -5,11 +5,11 @@
 }
 
 body{
-    background-color: rgb(183, 249, 227);
+    background-color:  #eae8e2;
     font-family: 'Roboto', sans-serif;
 }
 
-header {
+.header {
     position: sticky;
     top:0px;
     background-color: rgb(163, 236, 163);
@@ -23,7 +23,7 @@ h1{
 h2{
     text-align: center;
     font-family: 'Pacifico', cursive;
-    font-size: 100px;
+    font-size: 60px;
 }
 
 a {
@@ -33,6 +33,7 @@ a {
 ul{
     list-style: none;
 }
+
 /* Header */
 .header__nav {
     display: flex;
@@ -60,6 +61,9 @@ ul{
 .header__item:hover{
     transform: scale(1.25,1.25);
 }
+.header__item:visited{
+    color: blueviolet;
+}
 
 .header__item a {
     color: rgb(63, 61, 61);
@@ -69,7 +73,7 @@ ul{
 .main__section {
     display: flex;
     height: 90vh;
-    background-image: url(../recursos/portada.jpg);
+    background-image: url(../recursos/perronegro.jpg);
     background-size: cover;
     background-position: center;
     align-items: center;
@@ -353,6 +357,10 @@ footer {
     padding: 10px;
 }
 
+.carrousel__altura{
+    height: 400px;
+}
+
 /* Media Querie de celular */
 @media (min-width:320px) and (max-width:575px) {
     header {
@@ -496,6 +504,9 @@ height: 50vh;
     .main__imagenjuli {
         width: auto;
         height: 200px;
+    }
+    .ocultar{
+        display: none;
     }
 }
 /* Media Querie de tablet */

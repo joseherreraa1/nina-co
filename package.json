@@ -1,0 +1,23 @@
+{
+  "name": "desarrollo-web",
+  "version": "1.0.0",
+  "description": "<h1>Nina&Co</h1>\r <p>\r </p>\r <h2>Tecnologias usadas</h2>\r <ul>\r     <li>Html5</li>\r     <li>Css3</li>\r     <li>Bootstrap</li>\r     <li>Sass</li>\r </ul>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joseherreraa1/nina-co.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joseherreraa1/nina-co/issues"
+  },
+  "homepage": "https://github.com/joseherreraa1/nina-co#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
