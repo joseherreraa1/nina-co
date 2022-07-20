@@ -45,6 +45,9 @@ ul{
     border-radius: 200px;
 }
 
+.mov:hover{
+    transform: rotate(300deg);
+}
 .header__lista {
     list-style: none;
     display: flex;
