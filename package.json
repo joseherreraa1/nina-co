@@ -4,7 +4,9 @@
   "description": "<h1>Nina&Co</h1>\r <p>\r </p>\r <h2>Tecnologias usadas</h2>\r <ul>\r     <li>Html5</li>\r     <li>Css3</li>\r     <li>Bootstrap</li>\r     <li>Sass</li>\r </ul>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
