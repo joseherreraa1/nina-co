@@ -2,7 +2,7 @@
 .header {
     position: sticky;
     top:0px;
-    background-color: #B3A370;
+    background-color: $color-principal;
     padding: 0px 16px;
 
     &__mov:hover{

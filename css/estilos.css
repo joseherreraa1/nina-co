@@ -1,3 +1,5 @@
+/* Colores */
+/* Letras */
 /* Header */
 .header {
   position: sticky;
@@ -140,16 +142,16 @@ footer {
 
 body {
   background-color: #eae8e2;
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 h1 {
-  font-family: 'Pacifico', cursive; }
+  font-family: "Pacifico", cursive; }
 
 h2 {
   text-align: center;
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   font-size: 60px;
-  color: #A09166; }
+  color: #B3A370; }
 
 a {
   text-decoration: none; }

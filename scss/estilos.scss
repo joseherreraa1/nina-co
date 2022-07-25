@@ -11,21 +11,19 @@
 }
 
 body{
-    background-color:  #eae8e2;
-    font-family: 'Roboto', sans-serif;
+    background-color: $color-secundario;
+    font-family: $font-principal;
 }
 
-
-
 h1{
-    font-family: 'Pacifico', cursive;
+    font-family: $font-titulos;
 }
 
 h2{
     text-align: center;
-    font-family: 'Pacifico', cursive;
+    font-family: $font-titulos;
     font-size: 60px;
-    color: #A09166;
+    color: $color-principal;
 }
 
 a {
