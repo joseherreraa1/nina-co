@@ -1,0 +1,28 @@
+/* Header */
+.header {
+    position: sticky;
+    top:0px;
+    background-color: #B3A370;
+    padding: 0px 16px;
+
+    &__mov:hover{
+        transform: rotate(300deg);
+    }
+    
+    &__item {
+        display: flex;
+        padding: 15px;
+    
+        &:hover{
+            transform: scale(1.25,1.25);
+        }
+        &:visited{
+            color: rgb(255, 255, 255);
+        }
+        
+        & a {
+            color: rgb(63, 61, 61);
+            text-decoration: none;
+        }
+    }
+}

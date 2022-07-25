@@ -1,3 +1,9 @@
+@import"variable";
+@import"header";
+@import"index";
+@import"footer";
+@import"mediaqueries";
+
 *{
     margin: 0px;
     padding: 0px;
@@ -9,12 +15,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-.header {
-    position: sticky;
-    top:0px;
-    background-color: rgb(163, 236, 163);
-    padding: 0px 16px;
-}
+
 
 h1{
     font-family: 'Pacifico', cursive;
@@ -24,6 +25,7 @@ h2{
     text-align: center;
     font-family: 'Pacifico', cursive;
     font-size: 60px;
+    color: #A09166;
 }
 
 a {
@@ -32,194 +34,4 @@ a {
 
 ul{
     list-style: none;
-}
-
-/* Header */
-
-.mov:hover{
-    transform: rotate(300deg);
-}
-
-.header__item {
-    display: flex;
-    padding: 15px;
-}
-.header__item:hover{
-    transform: scale(1.25,1.25);
-}
-.header__item:visited{
-    color: blueviolet;
-}
-
-.header__item a {
-    color: rgb(63, 61, 61);
-    text-decoration: none;
-}
-/* Index */
-.main__section {
-    display: flex;
-    height: 90vh;
-    background-image: url(../recursos/perronegro.jpg);
-    background-size: cover;
-    background-position: center;
-    align-items: center;
-}
-
-.main__titulo {
-    font-style: italic;
-    font-size: 100px;
-    color: rgb(219, 239, 38);
-    text-align: center;
-    padding: 30px;
-}
-
-.main__texto {
-    font-size: 30px;
-    line-height: 1.5;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    padding: 50px;
-    margin: 100px;
-}
-
-.main__sectionabajo {
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    justify-content: center;
-}
-
-.main__amb {
-    display: flex;
-    align-self: center;
-    width: 100px;
-    height: 100px;
-}
-/* Productos */
-
-
-/* Tu talle */
-
-/* Sobre nosotros */
-
-
-/* Contactanos */
-
-
-
-
-/* Footer */
-footer {
-    background-color: rgb(163, 236, 163);
-    display: grid;
-    padding: 24px;
-    grid-template-areas:"indice redes"
-                        "indice derechos";
-}
-.footer__indice{
-    grid-area: indice;
-}
-
-.footer__redes{
-    grid-area: redes;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer__derechos {
-    grid-area: derechos;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.footer__iconos{
-    width: 50px;
-    height: 50px;
-}
-
-.footer__indice ul li {
-    font-size: 16px;
-    text-decoration: none;
-    padding: 10px;
-}
-
-/* Media Querie de celular */
-@media (min-width:320px) and (max-width:575px) {
-    header {
-        height: auto;
-        position: relative;
-    }
-    .header__lista{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-/* main index */
-.main__section {
-    display: flex;
-    height: auto;
-    background-image: none;
-    align-items: center;
-    justify-content: center;
-}
-
-.main__titulo {
-    font-size: 40px;
-    padding: 30px;
-}
-
-.main__texto {
-    font-size: 16px;
-    justify-content: center;
-    padding: 25px;
-    margin: 0px;
-}
-
-.main__sectionabajo {
-    flex-direction: column;
-    padding: 15px;
-}
-
-.main__bolsa {
-    width: 60vw;
-    height: 50vh;
-}
-/* Productos */
-
-/* tu talle */
-
-    /* Sobre Nosotros */
-}
-/* Media Querie de tablet */
-@media (min-width: 576px) and (max-width: 992px) {
-    header{
-        height: auto;
-    }
-/* Index */
-    .main__titulo {
-        font-size: 80px;
-        padding: 0px;
-    }
-    
-    .main__texto {
-        padding: 50px;
-        margin: auto;
-    }
-    .main__sectionabajo {
-        display: flex;
-        flex-direction: column;
-        padding: 15px;
-    }
-    
-    .main__bolsa {
-        display: flex;
-        width: 30vw;
-        height: 50vh;
-    }
-    /* Productos */
-
-    /* Tu talle */
-    
-    /* Sobre Nosotros */
 }

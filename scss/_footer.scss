@@ -1,0 +1,40 @@
+/* Footer */
+footer {
+    background-color: #B3A370;
+    display: grid;
+    padding: 24px;
+    grid-template-areas:"indice redes"
+                        "indice derechos";
+    
+    .footer{
+        
+        &__indice{
+            grid-area: indice;
+        }
+
+        &__redes{
+            grid-area: redes;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        &__derechos {
+            grid-area: derechos;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__iconos{
+            width: 50px;
+            height: 50px;
+        }
+        
+        &__indice ul li {
+            font-size: 16px;
+            text-decoration: none;
+            padding: 10px;
+        }
+    }
+}

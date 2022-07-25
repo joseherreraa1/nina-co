@@ -1,0 +1,74 @@
+/* Media Querie de celular */
+@media (min-width:320px) and (max-width:575px) {
+    header {
+        height: auto;
+        position: relative;
+    }
+    .header__lista{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+/* main index */
+.main__section {
+    display: flex;
+    height: auto;
+    background-image: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__titulo {
+    font-size: 40px;
+    padding: 30px;
+}
+
+.main__texto {
+    font-size: 16px;
+    justify-content: center;
+    padding: 25px;
+    margin: 0px;
+}
+
+.main__sectionabajo {
+    flex-direction: column;
+    padding: 15px;
+}
+
+.main__bolsa {
+    width: 60vw;
+    height: 50vh;
+}
+/* Productos */
+
+/* tu talle */
+
+    /* Sobre Nosotros */
+}
+/* Media Querie de tablet */
+@media (min-width: 576px) and (max-width: 992px) {
+    header{
+        height: auto;
+    }
+/* Index */
+    .main__titulo {
+        font-size: 80px;
+        padding: 0px;
+    }
+    
+    .main__texto {
+        padding: 50px;
+        margin: auto;
+    }
+    .main__sectionabajo {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .main__bolsa {
+        display: flex;
+        width: 30vw;
+        height: 50vh;
+    }
+}
