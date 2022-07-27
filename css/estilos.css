@@ -105,12 +105,11 @@ footer {
     justify-content: center;
     padding: 25px;
     margin: 0px; }
+  .ocultar {
+    display: none; }
   .main__sectionabajo {
     flex-direction: column;
     padding: 15px; }
-  .main__bolsa {
-    width: 60vw;
-    height: 50vh; }
   /* Productos */
   /* tu talle */
   /* Sobre Nosotros */ }
