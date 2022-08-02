@@ -1,0 +1,11 @@
+/* Maps */
+$titulos:(
+    h1: 3rem,
+    h2: 2rem
+);
+/* Extend */
+.flex__centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

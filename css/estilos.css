@@ -1,10 +1,17 @@
 /* Colores */
 /* Letras */
+/* Maps */
+/* Extend */
+.flex__centrado, footer .footer__redes, footer .footer__derechos {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 /* Header */
 .header {
   position: sticky;
   top: 0px;
-  background-color: #B3A370;
+  background-color: #7da937;
   padding: 0px 16px; }
   .header__mov:hover {
     transform: rotate(300deg); }
@@ -23,6 +30,7 @@
 .main__section {
   display: flex;
   height: 90vh;
+  width: auto;
   background-image: url(../recursos/perronegro.jpg);
   background-size: cover;
   background-position: center;
@@ -57,22 +65,16 @@
 
 /* Footer */
 footer {
-  background-color: #B3A370;
+  background-color: #7da937;
   display: grid;
   padding: 24px;
   grid-template-areas: "indice redes" "indice derechos"; }
   footer .footer__indice {
     grid-area: indice; }
   footer .footer__redes {
-    grid-area: redes;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+    grid-area: redes; }
   footer .footer__derechos {
-    grid-area: derechos;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+    grid-area: derechos; }
   footer .footer__iconos {
     width: 50px;
     height: 50px; }
@@ -93,10 +95,10 @@ footer {
   /* main index */
   .main__section {
     display: flex;
-    height: auto;
-    background-image: none;
+    justify-content: center;
     align-items: center;
-    justify-content: center; }
+    height: auto;
+    background-image: none; }
   .main__titulo {
     font-size: 40px;
     padding: 30px; }
@@ -109,10 +111,7 @@ footer {
     display: none; }
   .main__sectionabajo {
     flex-direction: column;
-    padding: 15px; }
-  /* Productos */
-  /* tu talle */
-  /* Sobre Nosotros */ }
+    padding: 15px; } }
 
 /* Media Querie de tablet */
 @media (min-width: 576px) and (max-width: 992px) {
@@ -128,11 +127,7 @@ footer {
   .main__sectionabajo {
     display: flex;
     flex-direction: column;
-    padding: 15px; }
-  .main__bolsa {
-    display: flex;
-    width: 30vw;
-    height: 50vh; } }
+    padding: 15px; } }
 
 * {
   margin: 0px;
@@ -150,7 +145,7 @@ h2 {
   text-align: center;
   font-family: "Pacifico", cursive;
   font-size: 60px;
-  color: #B3A370; }
+  color: #7da937; }
 
 a {
   text-decoration: none; }

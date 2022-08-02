@@ -12,10 +12,10 @@
 /* main index */
 .main__section {
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: auto;
     background-image: none;
-    align-items: center;
-    justify-content: center;
 }
 
 .main__titulo {
@@ -31,18 +31,12 @@
 }
 .ocultar{
     display: none;
-}
+    }
 
 .main__sectionabajo {
     flex-direction: column;
     padding: 15px;
-}
-
-/* Productos */
-
-/* tu talle */
-
-    /* Sobre Nosotros */
+    }
 }
 /* Media Querie de tablet */
 @media (min-width: 576px) and (max-width: 992px) {
@@ -65,9 +59,4 @@
         padding: 15px;
     }
     
-    .main__bolsa {
-        display: flex;
-        width: 30vw;
-        height: 50vh;
-    }
 }
