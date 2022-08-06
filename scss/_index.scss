@@ -12,33 +12,18 @@
     }
 
     &__titulo {
-        font-style: italic;
-        font-size: 80px;
         color: rgb(0, 0, 0);
         text-align: center;
         padding: 30px;
     }
 
     &__texto {
-        font-size: 30px;
+        font-size: 2rem;
         line-height: 1.5;
         text-align: center;
         color: rgb(0, 0, 0);
         padding: 50px;
-        margin: 100px;
+        margin: 50px;
     }
 
-    &__sectionabajo {
-        display: flex;
-        flex-direction: column;
-        padding: 15px;
-        justify-content: center;
-    }
-
-    &__amb {
-        display: flex;
-        align-self: center;
-        width: 100px;
-        height: 100px;
-    }
 }

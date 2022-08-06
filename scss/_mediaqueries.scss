@@ -4,6 +4,11 @@
         height: auto;
         position: relative;
     }
+
+    h3{
+        text-align: center;
+        justify-content: center;
+    }
     .header__lista{
         flex-direction: column;
         justify-content: center;
@@ -19,23 +24,29 @@
 }
 
 .main__titulo {
-    font-size: 40px;
-    padding: 30px;
+    padding: 16px;
+    margin: 0px;
 }
 
 .main__texto {
     font-size: 16px;
     justify-content: center;
-    padding: 25px;
+    padding: 20px;
     margin: 0px;
 }
 .ocultar{
     display: none;
     }
 
-.main__sectionabajo {
-    flex-direction: column;
-    padding: 15px;
+footer {        
+    grid-template-areas:"indice"
+                        "derechos"
+                        "redes";
+    }
+    .footer__indice{
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
     }
 }
 /* Media Querie de tablet */
@@ -44,19 +55,17 @@
         height: auto;
     }
 /* Index */
+    .main__section {
+        height: 40vh;
+    }
     .main__titulo {
-        font-size: 80px;
+        font-size: 3rem;
         padding: 0px;
     }
     
     .main__texto {
-        padding: 50px;
-        margin: auto;
-    }
-    .main__sectionabajo {
-        display: flex;
-        flex-direction: column;
-        padding: 15px;
+        padding: 30px;
+
     }
     
 }

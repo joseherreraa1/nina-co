@@ -7,7 +7,6 @@ footer {
                         "indice derechos";
     
     .footer{
-        
         &__indice{
             grid-area: indice;
         }
@@ -30,7 +29,8 @@ footer {
         &__indice ul li {
             font-size: 16px;
             text-decoration: none;
-            padding: 10px;
+            padding: 5px;
+            
         }
     }
 }

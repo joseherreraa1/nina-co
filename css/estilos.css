@@ -36,31 +36,17 @@
   align-items: center; }
 
 .main__titulo {
-  font-style: italic;
-  font-size: 80px;
   color: black;
   text-align: center;
   padding: 30px; }
 
 .main__texto {
-  font-size: 30px;
+  font-size: 2rem;
   line-height: 1.5;
   text-align: center;
   color: black;
   padding: 50px;
-  margin: 100px; }
-
-.main__sectionabajo {
-  display: flex;
-  flex-direction: column;
-  padding: 15px;
-  justify-content: center; }
-
-.main__amb {
-  display: flex;
-  align-self: center;
-  width: 100px;
-  height: 100px; }
+  margin: 50px; }
 
 /* Footer */
 footer {
@@ -80,13 +66,16 @@ footer {
   footer .footer__indice ul li {
     font-size: 16px;
     text-decoration: none;
-    padding: 10px; }
+    padding: 5px; }
 
 /* Media Querie de celular */
 @media (min-width: 320px) and (max-width: 575px) {
   header {
     height: auto;
     position: relative; }
+  h3 {
+    text-align: center;
+    justify-content: center; }
   .header__lista {
     flex-direction: column;
     justify-content: center;
@@ -99,34 +88,34 @@ footer {
     height: auto;
     background-image: none; }
   .main__titulo {
-    font-size: 40px;
-    padding: 30px; }
+    padding: 16px;
+    margin: 0px; }
   .main__texto {
     font-size: 16px;
     justify-content: center;
-    padding: 25px;
+    padding: 20px;
     margin: 0px; }
   .ocultar {
     display: none; }
-  .main__sectionabajo {
+  footer {
+    grid-template-areas: "indice" "derechos" "redes"; }
+  .footer__indice {
     flex-direction: column;
-    padding: 15px; } }
+    justify-content: center;
+    text-align: center; } }
 
 /* Media Querie de tablet */
 @media (min-width: 576px) and (max-width: 992px) {
   header {
     height: auto; }
   /* Index */
+  .main__section {
+    height: 40vh; }
   .main__titulo {
-    font-size: 80px;
+    font-size: 3rem;
     padding: 0px; }
   .main__texto {
-    padding: 50px;
-    margin: auto; }
-  .main__sectionabajo {
-    display: flex;
-    flex-direction: column;
-    padding: 15px; } }
+    padding: 30px; } }
 
 * {
   margin: 0px;
@@ -138,19 +127,30 @@ body {
   font-family: "Roboto", sans-serif; }
 
 h1 {
+  font-size: 4rem;
   font-family: "Pacifico", cursive; }
 
 h2 {
   text-align: center;
   font-family: "Pacifico", cursive;
-  font-size: 60px;
+  font-size: 2.5rem;
   color: #58b46f; }
 
 h5 {
-  color: rebeccapurple; }
+  color: #58b46f; }
+
+p {
+  font-size: 1.3rem; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #000; }
+
+.background-tarjetas {
+  background-color: #eae8e2; }
+
+.zoom-tarjetas:hover {
+  transform: scale(1.1, 1.1); }
 
 ul {
   list-style: none; }
@@ -160,3 +160,7 @@ ul {
 
 .card-text {
   font-family: "Roboto", sans-serif; }
+
+iframe {
+  height: 50%;
+  width: 100%; }
