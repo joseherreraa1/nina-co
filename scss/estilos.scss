@@ -26,11 +26,19 @@ h2{
     font-size: 60px;
     color: $color-principal;
 }
-
+h5{
+    color: rebeccapurple;
+}
 a {
     text-decoration: none;
 }
 
 ul{
     list-style: none;
+}
+.card-title {
+    font-size: 2rem;
+}
+.card-text{
+    font-family: $font-principal;
 }
