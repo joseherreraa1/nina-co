@@ -36,7 +36,6 @@
   align-items: center; }
 
 .main__titulo {
-  color: black;
   text-align: center;
   padding: 30px; }
 
@@ -82,14 +81,13 @@ footer {
     align-items: center; }
   /* main index */
   .main__section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    background-image: none; }
+    height: 30vh; }
   .main__titulo {
+    font-size: 2rem;
     padding: 16px;
     margin: 0px; }
+  ul {
+    padding: 0px; }
   .main__texto {
     font-size: 16px;
     justify-content: center;
@@ -100,7 +98,6 @@ footer {
   footer {
     grid-template-areas: "indice" "derechos" "redes"; }
   .footer__indice {
-    flex-direction: column;
     justify-content: center;
     text-align: center; } }
 
@@ -128,7 +125,8 @@ body {
 
 h1 {
   font-size: 4rem;
-  font-family: "Pacifico", cursive; }
+  font-family: "Pacifico", cursive;
+  color: #58b46f; }
 
 h2 {
   text-align: center;
@@ -137,6 +135,7 @@ h2 {
   color: #58b46f; }
 
 h5 {
+  font-size: 2rem;
   color: #58b46f; }
 
 p {

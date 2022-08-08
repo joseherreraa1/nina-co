@@ -16,18 +16,18 @@
     }
 /* main index */
 .main__section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    background-image: none;
+
+    height: 30vh;
 }
 
 .main__titulo {
+    font-size: 2rem;
     padding: 16px;
     margin: 0px;
 }
-
+ul{
+    padding: 0px;
+}
 .main__texto {
     font-size: 16px;
     justify-content: center;
@@ -44,7 +44,6 @@ footer {
                         "redes";
     }
     .footer__indice{
-            flex-direction: column;
             justify-content: center;
             text-align: center;
     }
