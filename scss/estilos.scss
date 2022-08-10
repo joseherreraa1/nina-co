@@ -25,12 +25,11 @@ h1{
 h2{
     text-align: center;
     font-family: $font-titulos;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     color: $color-principal;
 }
 
 h5{
-    font-size: 2rem;
     color: $color-principal;
 }
 
@@ -43,7 +42,7 @@ a {
     color: #000;
 }
 .background-tarjetas{
-    background-color: #eae8e2;
+    background-color: $color-secundario;
 }
 .zoom-tarjetas:hover{
     transform: scale(1.1,1.1);
@@ -53,13 +52,18 @@ ul{
     list-style: none;
 }
 .card-title {
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 .card-text{
+    font-size: 1.1rem;
     font-family: $font-principal;
 }
 iframe {
     height: 50%;
     width: 100%;
     
+}
+.btn{
+    background-color: $color-principal;
+    border: $color-principal;
 }

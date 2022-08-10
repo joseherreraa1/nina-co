@@ -40,7 +40,7 @@
   padding: 30px; }
 
 .main__texto {
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1.5;
   text-align: center;
   color: black;
@@ -72,6 +72,10 @@ footer {
   header {
     height: auto;
     position: relative; }
+  h1 {
+    font-size: 1.5rem; }
+  h2 {
+    font-size: 0.5rem; }
   h3 {
     text-align: center;
     justify-content: center; }
@@ -83,16 +87,16 @@ footer {
   .main__section {
     height: 30vh; }
   .main__titulo {
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding: 16px;
     margin: 0px; }
-  ul {
-    padding: 0px; }
   .main__texto {
-    font-size: 16px;
+    font-size: 1.3rem;
     justify-content: center;
     padding: 20px;
     margin: 0px; }
+  ul {
+    padding: 0px; }
   .ocultar {
     display: none; }
   footer {
@@ -131,11 +135,10 @@ h1 {
 h2 {
   text-align: center;
   font-family: "Pacifico", cursive;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   color: #58b46f; }
 
 h5 {
-  font-size: 2rem;
   color: #58b46f; }
 
 p {
@@ -155,11 +158,16 @@ ul {
   list-style: none; }
 
 .card-title {
-  font-size: 2rem; }
+  font-size: 1.7rem; }
 
 .card-text {
+  font-size: 1.1rem;
   font-family: "Roboto", sans-serif; }
 
 iframe {
   height: 50%;
   width: 100%; }
+
+.btn {
+  background-color: #58b46f;
+  border: #58b46f; }
